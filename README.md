@@ -7,7 +7,7 @@
 
 ![](./src/img/interceptador2.gif)
 
-Deploy do projeto: <Em breve>
+Deploy do projeto: <https://interceptador-busca-cep.vercel.app/>
 
 ## Sobre
 
