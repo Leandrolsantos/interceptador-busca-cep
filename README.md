@@ -23,7 +23,7 @@ Compreender como funciona o React e realizar um projeto o qual me tire da zona d
 
 ### Conclusão
 
-Foi uma experiência interessante, percebi que as possibilidades na utilização do React são muito maiores que só utilizar as linguagens isoladas. Irei me aprofundar nesta biblioteca para poder aplicar nos próximos projetos.
+Foi uma experiência interessante, percebi que as possibilidades na utilização do React são muito maiores que só utilizar as linguagens isoladas. Irei me aprofundar nesta biblioteca para poder aplicar nos próximos projetos. Tive alguns problemas com deploy do projeto e tive que criar outro repositório (que é este aqui) para publicar o código que já estava pronto. Então tive que privar o outro repositório para não perder os dias de commit do perfil.
 
 ### Ferramentas Utilizadas
 
