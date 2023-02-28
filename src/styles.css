@@ -39,7 +39,7 @@
     margin: 34px 0;
     display: flex;
     border-radius: 8px;
-    box-shadow: 1px 3px 8px rgba(0,0,0, 0.5);
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.534);
     box-shadow: 1px 2px 13px black;
     border: groove;
     border-width: 4.1px;
@@ -54,7 +54,7 @@
     font-weight: bold;
     color: #fffffff0;
     -webkit-text-stroke-width: 0.3px;
-    -webkit-text-stroke-color: red;
+    -webkit-text-stroke-color: rgb(230, 14, 14);
     outline: none;
     margin-right: 8px;
 }
@@ -105,26 +105,70 @@
     font-weight: bold;
 }
 
+.footer p {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0);
+    background: linear-gradient(0.9turn, #b889ff, #47BDFF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.footer footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    text-shadow: 3px 3px 3px rgb(0 0 0);
+}
+
+.button-footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin: 12px;
+}
+
+.buttonSearchFooter {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    margin: 7px;
+    transition: transform 0.9s;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.858);
+    border-radius: 10px;
+    padding: 5px;
+    border: solid rgba(5, 30, 91, 0.416);
+    background: linear-gradient(0.9turn, #684e8e, #1260bf);
+    background-clip: text;
+    -webkit-background-clip: image;
+    -webkit-text-fill-color: transparent;
+}
+
+.buttonSearchFooter:hover {
+    transform: scale(1.2);
+}
+
 @media (max-width: 620px){
     .container{
         background: url("/src/img/fundo.jpg") no-repeat;
     }
 
-    .title{
-        font-size: 37px;
+    .title {
+        font-size: 50px;
     }
 
-    .containerInput{
-        width: 70vw;
-    }
-
-    .main h2{
+    .main h2 {
         font-size: 28px;
     }
 
-    .main{
+    .main {
         width: 80%;
         min-height: 250px;
-        text-align: center;
     }
 }

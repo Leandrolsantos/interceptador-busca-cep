@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { FaSearchLocation } from 'react-icons/fa';
+import { BsLinkedin } from 'react-icons/bs';
+import { BsGithub } from 'react-icons/bs';
 import './styles.css';
 
 
@@ -40,7 +42,7 @@ function App() {
       <div className="containerInput">
         <input 
         type="text"
-        placeholder="Digite aqui seu CEP..."
+        placeholder="Digite aqui seu CEP...."
         value={input}
         onChange={(e) => setInput(e.target.value) }
         />
@@ -59,13 +61,30 @@ function App() {
               <span>Complemento: {cep.complemento}</span>
               <span>{cep.bairro}</span>
               <span>{cep.localidade} - {cep.uf}</span>
-              
+
             </main>
         )}
+
+<div className="footer">
+        <footer>
+          <p>Leandro Leme dos Santos - 2023</p>
+        </footer>
+      </div> 
+
+      <div className="button-footer">  
+        <button className="buttonSearchFooter">
+        <a href="https://www.linkedin.com/in/leandro-leme-santos/"><BsLinkedin size={32} color="white"/></a>
+        </button>
+
+        <button className="buttonSearchFooter">
+        <a href="https://github.com/Leandrolsantos"><BsGithub size={32} color="white"/></a>
+        </button>
+      </div>     
       
       </div>
 
   );
 }
+
 
 export default App;
