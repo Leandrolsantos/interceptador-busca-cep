@@ -1,0 +1,130 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("/src/img/fundo.jpg") no-repeat;
+    background-size: cover;
+}
+
+.title{
+    font-size: 85px;
+    color: rgba(255, 255, 255, 0.862);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.985);
+    text-shadow: 4px 3px 3px rgba(0, 0, 0, 0.815);
+    animation: flipTitle 2s;
+    transition: 2s;
+    
+}
+
+.title:hover{
+    transform: rotateX(360deg);
+}
+
+@keyframes flipTitle {
+    from{
+        transform: rotateX(180deg);
+    }
+
+    to{
+        transform: rotateY(4deg);
+    }
+}
+
+.containerInput{
+    background-color: rgba(255,255,255 0.2);
+    padding: 15px;
+    margin: 34px 0;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 1px 3px 8px rgba(0,0,0, 0.5);
+    box-shadow: 1px 2px 13px black;
+    border: groove;
+    border-width: 4.1px;
+    border-color: rgb(132, 132, 130);
+}
+
+.containerInput input{
+    background-color: transparent;
+    padding: 0 0 0 0;
+    border: 0;
+    font-size: 26px;
+    font-weight: bold;
+    color: #fffffff0;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: red;
+    outline: none;
+    margin-right: 8px;
+}
+
+.containerInput input::placeholder{
+    color: #fffffff0;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: red;
+}
+
+.buttonSearch{
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.buttonSearch:hover{
+    transform: scale(1.5);
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.678);
+    color: rgba(255, 255, 255, 0.918);
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: red;
+    border: groove;
+    border-width: 4px;
+    border-color: rgb(132, 132, 130);
+    width: 500px;
+    border-radius: 8px;
+}
+
+.main h2{
+    margin: 16px 0;
+    font-size: 39px;
+}
+
+.main span{
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+@media (max-width: 620px){
+    .container{
+        background: url("/src/img/fundo.jpg") no-repeat;
+    }
+
+    .title{
+        font-size: 37px;
+    }
+
+    .containerInput{
+        width: 70vw;
+    }
+
+    .main h2{
+        font-size: 28px;
+    }
+
+    .main{
+        width: 80%;
+        min-height: 250px;
+        text-align: center;
+    }
+}
