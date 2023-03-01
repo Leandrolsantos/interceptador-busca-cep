@@ -66,10 +66,6 @@ function App() {
         )}
 
 <div className="footer">
-        <footer>
-          <p>Leandro Leme dos Santos - 2023</p>
-        </footer>
-      </div> 
 
       <div className="button-footer">  
         <button className="buttonSearchFooter">
@@ -79,7 +75,12 @@ function App() {
         <button className="buttonSearchFooter">
         <a href="https://github.com/Leandrolsantos"><BsGithub size={32} color="white"/></a>
         </button>
-      </div>     
+      </div>
+
+      <footer>
+          <p>Leandro Leme dos Santos - 2023</p>
+        </footer>
+      </div>      
       
       </div>
 
